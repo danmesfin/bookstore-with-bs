@@ -1,9 +1,9 @@
-.main-container {
+.main__container {
   position: relative;
   width: 100%;
 }
 
-.login-container {
+.login__container {
   position: absolute;
   top: 20%;
   left: 35%;
@@ -15,7 +15,7 @@
   padding-right: 10px;
   padding-bottom: 20px;
 }
-.login-header {
+.login__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-.login-form {
+.login__form {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -41,33 +41,33 @@ img {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.w-full {
+.w--full {
   width: 100%;
 }
 
-.mx-auto {
+.mx--auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.font-tangarine {
+.font--tangarine {
   font-family: "Tangerine", serif;
   font-size: 48px;
 }
-.font-sofia {
+.font--sofia {
   font-family: "Sofia", sans-serif;
   font-size: 32px;
 }
-.mt-20 {
+.mt--20 {
   margin-top: 20px;
 }
 
-.pt-10 {
+.pt--10 {
   padding-top: 10px;
 }
 
 @media (max-width: 800px) {
-  .login-container {
+  .login__container {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -79,7 +79,7 @@ img {
     padding-right: 5px;
     padding-bottom: 10px;
   }
-  .login-form {
+  .login__form {
     margin: 10px auto 5px;
     width: 80%;
     padding: 10px 5px;

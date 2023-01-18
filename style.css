@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: #caf0f8;
 }
+
 .hero {
   background-color: lightgray;
   height: 50px;
@@ -28,21 +29,21 @@ a {
   background-image: url("./image/bg-hero.jpg");
   height: 600px;
 }
-.hero-image {
+.hero__image {
   position: absolute;
   right: 0px;
 }
 
-.bg-lightblue {
+.bg--lightblue {
   background-color: #caf0f8;
 }
-.bg-darkblue {
+.bg--darkblue {
   background-color: #269d79;
 }
-.text-lg {
+.text--lg {
   font-size: 75px;
 }
-.text-xl {
+.text--xl {
   font: fontawesome;
   font: bold;
   font-size: 100px;
@@ -55,10 +56,12 @@ a {
   width: 200px;
   height: 300px;
   margin: 5px;
+}
+.border--black {
   border: black 1px;
+}
+.border--solid {
   border-style: solid;
-  border-space: 1px;
-  border-shadow: lightblue 2px;
 }
 .w-full {
   width: 100%;
@@ -89,10 +92,10 @@ nav ul li a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.search-box {
+.search__box {
   margin-top: 22px;
 }
-.search-txt {
+.search__txt {
   width: 70%;
   padding-left: 10px;
   padding-right: 10px;
@@ -132,14 +135,14 @@ nav ul li a {
 .center {
   margin: 10px auto 5px;
 }
-.input-text {
+.input__text {
   margin-top: 3px;
   padding-left: 5px;
 }
-.search-text {
+.search__text {
   width: 70%;
 }
-.search-button {
+.search__button {
   width: 20%;
   background-color: #397673;
   border-color: #397673;
@@ -203,6 +206,18 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.flex {
+  display: flex;
+}
+.flex--col {
+  flex-direction: row;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 600px) {
   .flex-container {
   }
@@ -231,15 +246,15 @@ input {
     height: 200px;
     width: 100%;
   }
-  .hero-text {
+  .hero__text {
     margin-top: 30px;
     padding: 30px 10px;
   }
-  .hero-image {
+  .hero__image {
     left: auto;
     right: auto;
   }
-  .search-txt {
+  .search__txt {
     padding-left: auto;
     padding-right: 10px;
     padding-top: 6px;
@@ -262,10 +277,10 @@ input {
   .card {
     width: 80%;
   }
-  .text-lg {
+  .text--lg {
     font-size: 20px;
   }
-  .text-xl {
+  .text--xl {
     font: fontawesome;
     font: bold;
     font-size: 30px;
