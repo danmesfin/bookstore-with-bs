@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="info.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hero bg-darkblue">
+      <nav>
+        <img class="logo" src="image/976516.png" alt="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About us </a></li>
+          <li><a href="mailinglist.html">Mailing list</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container info">
+      <div class="flex-container">
+        <div class="genres">
+          <h3>Genres</h3>
+          <br />
+          <input
+            for="#gospel"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label id="gospel">Spritual</label>
+          <br /><br />
+          <input
+            id="Fiction"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label for="#Fiction">Fiction</label><br /><br />
+          <input
+            id="Non-fiction"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label for="#Non-fiction">Non-fiction</label>
+          <br /><br />
+          <div class="flex">
+            <input id="Poetry" type="checkbox" value="" />
+            <label for="#Poetry">Poetry</label><br /><br />
+          </div>
+        </div>
+
+        <div class="pub-year">
+          <h3>Publication Year</h3>
+          <br />
+          <input id="pi_input" type="range" min="1900" max="2023" step="10" />
+          <p>From: 1900</p>
+          <p>To: <output id="value"></output></p>
+        </div>
+
+        <div class="authors">
+          <h3>Authros</h3>
+          <input
+            id="author1"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label for="#author1">Addis Alemayehu</label><br /><br />
+          <input
+            id="author2"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label for="#author2">Behalu Girma</label><br /><br />
+          <input
+            id="author3"
+            type="checkbox"
+            class="fname"
+            name="fname"
+            value=""
+          />
+          <label for="#author3">James Bond</label><br /><br />
+
+          <br />
+        </div>
+      </div>
+      <hr />
+      <div class="">
+        <br /><br />
+        <h3>Available Books</h3>
+        <br />
+        <div class="flex-container">
+          <div class="card">
+            <img
+              src="./image/book (1).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book (2).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book(3).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book (4).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+        </div>
+        <br /><br />
+        <hr />
+        <h3>Rent Books</h3>
+        <br />
+        <div class="flex-container">
+          <div class="card">
+            <img
+              src="./image/book (7).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book (8).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book(6).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="./image/book (5).jpg"
+              alt="cover-page"
+              style="width: 198px; height: inherit"
+            />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="search-box">
+        <form action="" class="search-bar">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="search for an audio"
+            style="width: 50%; height: 30px"
+          />
+          <input
+            class="button"
+            type="submit"
+            name=""
+            value="search"
+            style="height: 30px"
+          />
+        </form>
+        <br /><br /><br /><br /><br />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="iner-footer">
+        <div class="social-links">
+          <p class="footer-p">You can also find us on</p>
+          <ul>
+            <li class="social-items">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="social-items">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="social-items">
+              <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const value = document.querySelector("#value");
+      const input = document.querySelector("#pi_input");
+      value.textContent = input.value;
+      input.addEventListener("input", (event) => {
+        value.textContent = event.target.value;
+      });
+    </script>
+  </body>
+</html>
