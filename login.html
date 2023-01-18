@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="login.css" />
+    <script type="text/javascript" src="./javascript/loginFormValidator.js"></script>
     <title>login</title>
   </head>
   <body>
@@ -32,12 +33,15 @@
             <h2 class="mx--auto font--sofia">ECFC BOOK CLUB</h2>
             <h4 class="mx--auto">login to 5k-ECFC Book club</h4>
           </div>
-          <div class="login__form">
-            <form action="" class="w--full">
+          <div class="login__form form__data">
+            <form name="simple__form" action="#" onsubmit="return validateForm()" class="w--full">
               <label for="Email">Email</label><br />
-              <input type="email" name="email" class="w--full" required /><br /><br />
+              <input type="email" name="email" class="w--full"  />
+              <p class="flex error--message top--arrow"></p>
+              <br /><br />
               <label for="pwd">Password</label><br />
-              <input type="password" name="password" class="w--full" required /><br /><br />
+              <input type="password" name="password" class="w--full"  />
+              <p class="error--message top--arrow"></p><br /><br />
               <input class="button w--full" type="submit" value="Continue" />
               <div class="mt--20 mx--auto">Don't have an account? <a href="/signup.html">Sign up</a></div>
             </form>

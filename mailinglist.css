@@ -1,4 +1,4 @@
-.mail-container {
+.mail__container {
   margin: 10px auto 5px;
   width: 40%;
   background-color: #80b192;
@@ -8,7 +8,7 @@
   padding-bottom: 20px;
 }
 
-.mail-form {
+.mail__form {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -22,27 +22,27 @@
   flex-direction: column;
 }
 
-.w-full {
+.w--full {
   width: 100%;
 }
 
-.mx-auto {
+.mx--auto {
   margin-left: auto;
   margin-right: auto;
 }
-.mt-20 {
+.mt--20 {
   margin-top: 20px;
 }
 
-.pt-10 {
+.pt--10 {
   padding-top: 10px;
 }
 @media (max-width: 800px) {
-  .mail-container {
+  .mail__container {
     margin: 10px auto 5px;
     width: 80%;
   }
-  .mail-form {
+  .mail__form {
     margin: 10px auto 5px;
     width: 80%;
     padding: 10px 5px;

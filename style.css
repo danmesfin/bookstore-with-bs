@@ -213,14 +213,38 @@ input {
 .flex--col {
   flex-direction: row;
 }
-
+.flex--row {
+  flex-direction: column;
+}
 .flex--wrap {
   flex-wrap: wrap;
 }
+.font--large {
+  font-size: larger;
+}
 
-@media (max-width: 600px) {
-  .flex-container {
-  }
+.error--message {
+  background-color: white;
+  width: 143px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 107px;
+  visibility: hidden;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+}
+.error--message.top--arrow:after {
+  content: " ";
+  position: absolute;
+  right: 90px;
+  top: -15px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid white;
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
