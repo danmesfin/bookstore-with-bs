@@ -52,9 +52,9 @@
         </div>
       </div>
     </nav>
-    <div class="container info">
-      <div class="flex flex--col flex--wrap">
-        <div class="genres">
+    <div class="container-fluid px-5 py-5">
+      <div class="row">
+        <div class="col-sm-4">
           <h3>Genres</h3>
           <br />
           <input
@@ -89,7 +89,7 @@
           </div>
         </div>
 
-        <div class="pub-year">
+        <div class="col-sm-4">
           <h3>Publication Year</h3>
           <br />
           <input id="pi_input" type="range" min="1900" max="2023" step="10" />
@@ -97,7 +97,7 @@
           <p>To: <output id="value"></output></p>
         </div>
 
-        <div class="authors">
+        <div class="col-sm-4">
           <h3>Authros</h3>
           <input
             id="author1"
@@ -132,7 +132,7 @@
         <br /><br />
         <h3>Available Books</h3>
         <br />
-        <div class="flex flex--col flex--wrap">
+        <div class="d-flex flex-row">
           <div class="card">
             <img
               src="./image/book (1).jpg"

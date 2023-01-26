@@ -12,28 +12,6 @@ a {
   color: #caf0f8;
 }
 
-.hero {
-  background-color: lightgray;
-  height: 50px;
-}
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto 10px 20px;
-  padding-left: 50px;
-  padding-top: 50px;
-}
-.real-hero {
-  color: #caf0f8;
-  font-weight: bold;
-  background-image: url("./image/bg-hero.jpg");
-  height: 600px;
-}
-.hero__image {
-  position: absolute;
-  right: 0px;
-}
-
 .bg--lightblue {
   background-color: #caf0f8;
 }
@@ -147,33 +125,6 @@ input {
   text-align: center;
 }
 
-.container {
-  min-height: 500px;
-  margin: 10px 15px 5px;
-  padding: 10px 15px 5px;
-}
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flex {
-  display: flex;
-}
-.flex--col {
-  flex-direction: row;
-}
-.flex--row {
-  flex-direction: column;
-}
-.flex--wrap {
-  flex-wrap: wrap;
-}
-.font--large {
-  font-size: larger;
-}
-
 .error--message {
   background-color: white;
   width: 143px;
@@ -199,36 +150,6 @@ input {
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
-  nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px 5px;
-    margin-right: 5px;
-  }
-  .container {
-    min-height: 200px;
-    margin: 5px 5px 5px;
-    padding: 10px 5px 5px;
-  }
-  .flex-container {
-    flex-direction: column;
-  }
-  .hero {
-    height: 80px;
-  }
-  .real-hero {
-    padding-left: 20px;
-    height: 200px;
-    width: 100%;
-  }
-  .hero__text {
-    margin-top: 30px;
-    padding: 30px 10px;
-  }
-  .hero__image {
-    left: auto;
-    right: auto;
-  }
   .search__txt {
     padding-left: auto;
     padding-right: 10px;
@@ -245,19 +166,5 @@ input {
     border-radius: 0 25px 25px 0;
     padding-left: 2px;
     padding-right: 2px;
-  }
-  .col-1 {
-    width: 100%;
-  }
-  .card {
-    width: 80%;
-  }
-  .text--lg {
-    font-size: 20px;
-  }
-  .text--xl {
-    font: fontawesome;
-    font: bold;
-    font-size: 30px;
   }
 }
